@@ -1,0 +1,24 @@
+.empty-state {
+  border: 2px dashed var(--line-strong);
+  padding: 64px 24px;
+  text-align: center;
+  margin: 40px 0 72px;
+}
+
+.empty-state__code {
+  color: var(--cobalt);
+  font-size: 0.8rem;
+  margin-bottom: 14px;
+}
+
+.empty-state__title {
+  font-size: 1.5rem;
+}
+
+.empty-state__hint {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  max-width: 40ch;
+  margin-left: auto;
+  margin-right: auto;
+}
