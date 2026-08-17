@@ -1,0 +1,99 @@
+.project-card {
+  background: var(--paper-raised);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.project-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(45%) contrast(1.05);
+  transition: filter 0.2s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-card__media img {
+  filter: grayscale(0%) contrast(1.05);
+  transform: scale(1.03);
+}
+
+.project-card__number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--ink);
+  color: var(--signal);
+  font-size: 0.7rem;
+  padding: 3px 7px;
+}
+
+.project-card__body {
+  padding: 18px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.project-card__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--cobalt-dim);
+  text-transform: uppercase;
+}
+
+.project-card__title {
+  font-size: 1.15rem;
+  margin-top: 2px;
+}
+
+.project-card__client {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.project-card__desc {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+.project-card__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  padding: 0;
+  margin: 4px 0 0;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+}
+
+.project-card__remove {
+  margin-top: auto;
+  padding-top: 12px;
+  align-self: flex-start;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--line);
+  width: 100%;
+  text-align: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+}
+
+.project-card__remove:hover {
+  color: #c4392b;
+}
