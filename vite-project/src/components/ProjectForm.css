@@ -1,0 +1,127 @@
+.project-form-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(27, 27, 31, 0.55);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.project-form {
+  background: var(--paper-raised);
+  border: 2px solid var(--ink);
+  width: 100%;
+  max-width: 640px;
+  padding: 8px 28px 28px;
+}
+
+.project-form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0 12px;
+  border-bottom: 1px solid var(--line-strong);
+  margin-bottom: 20px;
+}
+
+.project-form__heading {
+  font-size: 1.4rem;
+}
+
+.project-form__close {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  line-height: 1;
+  padding: 4px;
+}
+
+.project-form__close:hover {
+  color: var(--ink);
+}
+
+.project-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+.project-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.project-form__field span.mono {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.project-form__field--wide {
+  grid-column: 1 / -1;
+}
+
+.project-form__field input,
+.project-form__field select,
+.project-form__field textarea {
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  padding: 9px 11px;
+  font-size: 0.92rem;
+  border-radius: var(--radius);
+  resize: vertical;
+  color: var(--ink);
+}
+
+.project-form__error {
+  color: #c4392b;
+  font-size: 0.75rem;
+}
+
+.project-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.project-form__cancel {
+  background: none;
+  border: 1px solid var(--line-strong);
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.project-form__cancel:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.project-form__submit {
+  background: var(--cobalt);
+  border: 1px solid var(--cobalt);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-form__submit:hover {
+  background: var(--cobalt-dim);
+  border-color: var(--cobalt-dim);
+}
+
+@media (max-width: 560px) {
+  .project-form__grid {
+    grid-template-columns: 1fr;
+  }
+}
