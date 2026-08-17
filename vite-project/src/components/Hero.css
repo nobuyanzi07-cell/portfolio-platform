@@ -1,0 +1,35 @@
+.hero {
+  border-bottom: 2px solid var(--ink);
+  background: var(--paper);
+}
+
+.hero__inner {
+  padding-top: 56px;
+  padding-bottom: 48px;
+}
+
+.hero__eyebrow {
+  color: var(--cobalt-dim);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.hero__headline {
+  font-size: clamp(3rem, 9vw, 6.2rem);
+  max-width: 900px;
+}
+
+.hero__sub {
+  margin-top: 24px;
+  max-width: 46ch;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px) {
+  .hero__inner {
+    padding-top: 40px;
+    padding-bottom: 36px;
+  }
+}
